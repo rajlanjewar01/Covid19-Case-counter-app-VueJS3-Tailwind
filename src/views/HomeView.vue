@@ -2,7 +2,7 @@
   <div v-if="!loading">
     <DataTitle :text="title" :date="date"/>
     <DataBox :stats="stats"/>
-    <!-- <CountrySelect :countries="countries"/> -->
+    <!-- <CountrySelect :countries="countries"/> asdad-->
   </div>
   <div v-else class="flex items-center justify-center flex-col">
     content loading...
