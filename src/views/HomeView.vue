@@ -2,7 +2,6 @@
   <div v-if="!loading">
     <DataTitle :text="title" :date="date"/>
     <DataBox :stats="stats"/>
-    <!-- <CountrySelect :countries="countries"/> asdad-->
   </div>
   <div v-else class="flex items-center justify-center flex-col">
     content loading...
@@ -13,13 +12,11 @@
 <script>
 import DataTitle from '@/components/DataTitle';
 import DataBox from '@/components/DataBox';
-import CountrySelect from '@/components/CountrySelect';
 export default {
   name: 'HomeView',
   components: {
     DataTitle,
     DataBox,
-    CountrySelect
   },
   data(){
     return{
